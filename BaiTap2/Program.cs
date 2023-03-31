@@ -47,13 +47,13 @@ namespace BaiTap2
             Console.Write("Moi ban nhap so N: ");
             int n = int.Parse(Console.ReadLine());
             int i = 1;
-            int tinh = 0;
+            int tinh = PhuongThuc.Tinh_Toan(i,n);
             //int cuuChuong = PhuongThuc.Tinh_Toan(n,i);
 
             for (i = 1; i <= 10; i++)
             {
+
                 
-                tinh = i * n;
                 //Console.WriteLine("Bang cuu chuong:{0}",tinh);
                 //Console.WriteLine($"{n} * {i} = {cuuChuong}\n");
                 Console.WriteLine($"Bang cuu chuong: {n} * {i} = {tinh}\n");
